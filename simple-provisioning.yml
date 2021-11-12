@@ -1,7 +1,7 @@
 ---
 
 - name: simple-provisioning
-  host: localhost
+  hosts: localhost
   connection: local
   gather_facts: false
   vars:
