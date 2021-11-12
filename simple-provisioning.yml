@@ -55,7 +55,7 @@
     
   - name: Create security group
     ec2_group:
-      name: allow-tcp
+      name: allow tcp
       description: sg with rule descriptions
       vpc_id: "{{result_vpc.vpc.id}}"
 #      profile: "{{ aws_profile }}"  
@@ -75,7 +75,7 @@
       image: "{{instance_image}}"
       region: "{{aws_region}}"
       wait: no
-      group: allow-tcp
+      group: allow tcp
       count: 1
       vpc_subnet_id: "{{result_subnet.subnet.id}}"
       assign_public_ip: yes
